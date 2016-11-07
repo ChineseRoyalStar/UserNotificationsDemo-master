@@ -44,4 +44,4 @@
     }    
     [NotificationAction addNotificationAction];
     //注册远端消息通知获取device token
-    [application registerForRemoteNotifications];`
+    [application registerForRemoteNotifications];
