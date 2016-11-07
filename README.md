@@ -14,7 +14,9 @@
 ` (void)userNotificationCenter:(UNUserNotificationCenter *)center didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void (^)())completionHandler`<br /><br />
 ***
 //iOS 10之前收到通知<br />
+//iOS 6以下 <br />
 `- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo` <br /> <br />
+//iOS 7以上<br />
 `- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler`<br /><br />
 ***
 //申请通知权限 <br />
