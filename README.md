@@ -13,9 +13,9 @@
 //iOS 10之前收到通知<br />
 `- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo` <br /> <br />
 `- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo fetchCompletionHandler:(void (^)(UIBackgroundFetchResult))completionHandler`<br /><br />
-//申请通知权限 <br />   
+//申请通知权限 <br />
   
-        if (IOS10_OR_LATER) { 
+    if (IOS10_OR_LATER) { 
         //iOS 10 later
         UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
         //必须写代理，不然无法监听通知的接收与点击事件
